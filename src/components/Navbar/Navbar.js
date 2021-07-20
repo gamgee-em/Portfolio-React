@@ -1,10 +1,12 @@
 const Navbar = () => {
     return (
         <nav>
-            <a href='/about'>About</a>
-            <a href='/portfolio'>Portfolio</a>
-            <a href='/resume'>Resume</a>
-            <a href='/contact'>Contact</a>
+            <div className='nav-container'>
+                <a href='/about'>About</a>
+                <a href='/portfolio'>Portfolio</a>
+                <a href='/resume'>Resume</a>
+                <a href='/contact'>Contact</a>
+            </div>
         </nav>
     )
 };

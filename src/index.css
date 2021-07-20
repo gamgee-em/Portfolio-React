@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
@@ -12,8 +18,56 @@ code {
     monospace;
 }
 
-nav a {
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(245,173,66);
+}
+
+.nav-container {
+  display: flex;
+  height: 100%;
+}
+
+.nav-container a {
   text-decoration: none;
   color: black;
-  padding: 1%;
+  height: 100%;
+  padding: 1.5%;
+}
+
+.nav-container a:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.486);
+  transition: 1s;
+}
+
+.nav-container a:visited {
+  color: black;
+  /* color: rgba(128, 128, 128, 0.486); */
+}
+
+/* CONTAINER */
+
+.main-container {
+  background: url(https://www.w3schools.com/howto/img_parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer {
+  color: black;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  text-align: center;
 }
