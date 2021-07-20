@@ -1,10 +1,13 @@
-import './App.css';
+import './index.css';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+
 
 const App = () => {
-  const title = 'Welcome to my Portfolio'
   return (
     <div className="App">
-      <h1>{title}</h1>
+      <Navbar />
+      <Home />
     </div>
   );
 }
