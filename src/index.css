@@ -19,13 +19,14 @@ code {
     monospace;
 }
 
-/* NAVBAR */
+/*! NAVBAR */
+
 nav {
   position: fixed;
   width: 100vw;
   height: 10vh;
   top: 0;
-  background-color: rgb(245,173,66);
+  background-color: rgba(245, 173, 66, 0.781);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
@@ -54,11 +55,26 @@ nav {
   /* color: rgba(128, 128, 128, 0.486); */
 }
 
-/* CONTAINER */
+/*! BACK TO HOME */
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  top: 13vh;
+  left: 1.75vw;
+  display: block;
+}
+
+
+
+/*! MAIN CONTAINER */
 
 .main-container {
-  margin-top: 10vh;
+  height: 100vh;
+  /* margin-top: 10vh; */
+
 }
+/*! BG IMAGE  */
 
 .background-image {
   background: url(https://www.w3schools.com/howto/img_parallax.jpg);
@@ -67,6 +83,26 @@ nav {
   background-position: center;
   height: 100vh;
 }
+
+/*! ABOUT */
+
+.about, .portfolio, .resume, .contact {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about-card {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.562);
+  width: 75vw;
+  height: 75vh;
+}
+
+/*! FOOTER */
 
 footer {
   background-color: rgba(0, 0, 0, 0);
@@ -82,3 +118,4 @@ footer {
   text-align: center;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.151);
 }
+
