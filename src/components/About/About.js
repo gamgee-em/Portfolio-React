@@ -1,14 +1,30 @@
+import homeBtn from '../HomeBtn/HomeBtn';
+
 const About = () => {
+
     return ( 
         <main className='about'>
             {/* try turning back to home a tag to it's on component and import instead  */}
-            <div className="back">
-                <a href='/'>
-                    <img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png"/>
-                </a>
-            </div>
-            <div className="about-card">
-                <h2>About Me Page</h2>
+            {homeBtn}
+            <div className="about-card-body">
+                {/* <div>
+                    <h2>About Me Page</h2>
+                </div> */}
+                
+                <div className="about-card-img">
+                    <img src="/images/sam-nrg-thunderstruck.jpg" alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
+                </div>
+
+                <div className="about-card-body-content">
+                    <p>
+                        Hi There! Welcome to my portfolio page. My name is Sam Sweigart. I currently identify as a Front-End Web Developer and am in the pursuit of my Full-Stack identity. 
+                        For most of my life, I have held a passion for high-level performance and the finer details in what it takes to get there.
+                        In my journey for a new path, I began exploring html and css. Living life as someone who has a near insatiable curiousity for information and problem solving, 
+                        I quickly knew that Web Development is something I wanted to explore and with time, become proficient in. 
+                        Thank you for stopping by my page and taking the time to get to know me a bit better. This space will continue to be a work in progress as I polish my current skills and expand my scope into other aspects of Web Development. 
+                        Please check in regularly and I would love to hear any feedback you may have to offer.
+                    </p>
+                </div>
             </div>
         </main>
      );
