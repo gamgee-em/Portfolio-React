@@ -7,7 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: none;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  background-color: rgb(236,235,241);
+  margin: 10vh 0 0 0;
+  height: 90vh;
 }
 
 body::before {
@@ -34,6 +37,7 @@ code {
 
 nav {
   position: fixed;
+  display: inline;
   width: 100vw;
   height: 10vh;
   top: 0;
@@ -57,14 +61,12 @@ nav {
 
 .nav-container a:hover {
   color: black;
-  /* background-color: rgba(128, 128, 128, 0.486); */
   background-color: rgba(0, 0, 0, 0.247);
   transition: .75s;
 }
 
 .nav-container a:visited {
   color: black;
-  /* color: rgba(128, 128, 128, 0.486); */
 }
 
 /*! BACK TO HOME */
@@ -77,13 +79,44 @@ nav {
   display: block;
 }
 
+/*! TOOLTIP */
+
+.tool-tip .tool-tip-text {
+  visibility: hidden;
+  position: absolute;
+  font-size: .75vw;
+  font-weight: bold;
+  width: 6vw;
+  top: 10vh;
+  right: -2vw;
+  padding: 1vh 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.363);
+  border-radius: 8px;
+}
+
+.tool-tip:hover .tool-tip-text{
+  visibility: visible;
+}
+
+.tool-tip .tool-tip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 33%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
 /*! MAIN CONTAINER */
 
 .main-container {
   height: 100vh;
-  /* margin-top: 10vh; */
-
 }
+
 /*! BG IMAGE  */
 
 .background-image {
@@ -94,26 +127,26 @@ nav {
   height: 100vh;
 }
 
-/*! ABOUT */
+/*! ABOUT / PORTFOLIO / RESUME / CONTACT */
 
 .about, .portfolio, .resume, .contact {
-  height: 100vh;
+  height: 90vh;
   background-color: rgba(0, 0, 0, 0.774);
 }
 
-.about {
+.about, .portfolio, .resume {
   display: flex;
   justify-content: center;
 }
 
-.about-card-body {
+.about-card-body, .portfolio-card-body, .resume-card-body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-self: center;
   align-items: center;
   flex: 1 0 0 calc(25% - 1em);
-  margin: 8vh 6vw 0vh 8vw; 
+  margin: 0 6vw 0 8vw; 
   width: 75vw;
   height: 75vh;
   border-radius:12px;
@@ -146,21 +179,50 @@ nav {
 
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75vw;
+}
+
+.card {
+  flex: 0 1 calc(33% - 1em);
+  margin: 1% 0;
+  border: none;
+  background-color: transparent;
+}
+
+.cards .card img {
+  border-radius: 8px;
+  box-shadow: 
+    0px 4px 10px 1px rgb(0, 0, 0),
+    0px 4px 10px 1px rgb(0, 0, 0),
+    0px 6px 10px 1px rgb(0, 0, 0);
+}
+
+.resume-img {
+  width: 25vw;
+  border-radius: 8px;
+}
+
+.resume-card {
+  box-shadow: 
+    0px 4px 10px 1px rgba(0, 0, 0, 0.123),
+    0px 4px 10px 1px rgb(0, 0, 0, 0.123),
+    0px 6px 10px 1px rgb(0, 0, 0, 0.123);
+}
+
 /*! FOOTER */
 
 footer {
-  font-size: 2.5vh;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.footer {
+  font-size: 2.5vh;  
   color: black;
   font-weight: bold;
   position: fixed;
   width: 100vw;
   left: 0;
-  bottom: 0;
+  bottom: -1vh;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.151);
 }
-

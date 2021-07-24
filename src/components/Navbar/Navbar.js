@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     
     const sayHello = (name) => {
@@ -7,13 +9,13 @@ const Navbar = () => {
     return (
         <nav>
             <div className='nav-container'>
-                <a onClick={ (e) => {
+                <Link onClick={ (e) => {
                     //e.preventDefault();
                     sayHello('Sam');
-                    }} href='/about'>About</a>
-                <a href='/portfolio'>Portfolio</a>
-                <a href='/resume'>Resume</a>
-                <a href='/contact'>Contact</a>
+                    }} to='/about'>About</Link>
+                <Link to='/portfolio'>Portfolio</Link>
+                <Link to='/resume'>Resume</Link>
+                <Link to='/contact'>Contact</Link>
             </div>
         </nav>
     )
