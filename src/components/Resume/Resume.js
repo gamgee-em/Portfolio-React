@@ -1,5 +1,7 @@
+import './index.css'
 import homeBtn from '../HomeBtn/HomeBtn';
 import resumeImg from './images/resume.png';
+
 const Resume = () => {
     return ( 
         <main className="resume">

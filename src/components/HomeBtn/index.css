@@ -1,0 +1,41 @@
+/*! BACK TO HOME */
+
+.back {
+    cursor: pointer;
+    position: absolute;
+    top: 13vh;
+    left: 1.75vw;
+    display: block;
+  }
+  
+  /*! TOOLTIP */
+  
+  .tool-tip .tool-tip-text {
+    visibility: hidden;
+    position: absolute;
+    font-size: .75vw;
+    font-weight: bold;
+    width: 6vw;
+    top: 10vh;
+    right: -2vw;
+    padding: 1vh 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 8px;
+  }
+  
+  .tool-tip:hover .tool-tip-text{
+    visibility: visible;
+  }
+  
+  .tool-tip .tool-tip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 33%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+  }

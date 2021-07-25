@@ -1,0 +1,11 @@
+footer {
+    font-size: 2.5vh;  
+    color: black;
+    font-weight: bold;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: -1vh;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.151);
+  }

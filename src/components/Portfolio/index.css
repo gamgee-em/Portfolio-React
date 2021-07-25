@@ -1,11 +1,11 @@
-.about {
+ .portfolio {
     height: 90vh;
-    background-color: rgba(0, 0, 0, 0.774);  
+    background-color: rgba(0, 0, 0, 0.774);
     display: flex;
     justify-content: center;
-}
-
-.about-card-body {
+ }
+  
+.portfolio-card-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -26,20 +26,24 @@
         0px 10px 20px 1px rgba(82, 87, 87, 0.181);
 }
 
-.about-card-img img {
-    width: 40vw;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 
-        0px 4px 10px 1px rgb(0, 0, 0),
-        0px 4px 10px 1px rgb(0, 0, 0),
-        0px 6px 10px 1px rgb(0, 0, 0);
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75vw;
 }
 
-.about-card-body-content {
-    font-size: 1.2vw;
-    margin: 2vh 0 0 0;
-    padding: 1vh 0 0 0;
-    width: 35vw;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
+.card {
+    flex: 0 1 calc(33% - 1em);
+    margin: 1% 0;
+    border: none;
+    background-color: transparent;
+}
+  
+  .cards .card img {
+    border-radius: 8px;
+    box-shadow: 
+      0px 4px 10px 1px rgb(0, 0, 0),
+      0px 4px 10px 1px rgb(0, 0, 0),
+      0px 6px 10px 1px rgb(0, 0, 0);
 }

@@ -1,3 +1,4 @@
+import './index.css'
 import homeBtn from '../HomeBtn/HomeBtn';
 import bucketListImg from "./images/bucket-list-ss.png";
 import workoutImg from "./images/workout-sessions.png";

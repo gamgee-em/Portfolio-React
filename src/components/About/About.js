@@ -1,5 +1,5 @@
-import homeBtn from '../HomeBtn/HomeBtn';
 import './index.css';
+import homeBtn from '../HomeBtn/HomeBtn';
 import aboutImg from './images/sam-nrg-thunderstruck.JPG';
 
 const About = () => {
