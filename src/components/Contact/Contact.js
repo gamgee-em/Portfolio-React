@@ -26,7 +26,7 @@ const Contact = () => {
                                                     onChange={this.onNameChange.bind(this)} *//>
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <input placeholder = "Email"  id="email" type="email"
+                                                    <input placeholder = "Your Email"  id="email" type="email"
                                                     className="form-control" aria-describedby="emailHelp"
                                                     required /* value={this.state.email} onChange=
                                                     {this.onEmailChange.bind(this)} *//>
@@ -47,7 +47,9 @@ const Contact = () => {
                                         <button type="submit" className="submit">Submit</button>
                                     </form>
                                     <section className="social-icons">
-                                        
+                                        <img src="https://img.icons8.com/material-two-tone/24/000000/github.png"/>
+                                        <img src="https://img.icons8.com/material-two-tone/24/000000/linkedin--v1.png"/>
+                                        <img src="https://img.icons8.com/material-two-tone/24/000000/stack-of-tweets.png" className=""/>
                                     </section>
                                 </div>
                             </div>

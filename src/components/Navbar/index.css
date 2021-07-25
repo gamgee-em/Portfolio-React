@@ -27,7 +27,7 @@ nav {
   .nav-container a:hover {
     color: black;
     background-color: rgba(0, 0, 0, 0.247);
-    transition: .75s;
+    transition: 750ms;
   }
   
   .nav-container a:visited {
