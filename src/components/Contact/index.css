@@ -5,17 +5,17 @@
     justify-content: center;
   }
   
-  .contact-card-body {
+.contact-card-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-self: center;
     align-items: center;
     flex: 1 0 0 calc(25% - 1em);
-    margin: 0 6vw 0 8vw; 
+    margin: 0 8vw; 
     width: 75vw;
     height: 75vh;
-    border-radius:12px;
+    border-radius: 12px;
     color: rgb(109,105,95);
     background-color: rgba(0, 0, 0, 0.562);
     box-shadow: 
@@ -24,4 +24,45 @@
       0px 6px 15px 1px rgba(87, 87, 87, 0.121),
       0px 8px 18px 1px rgba(82, 87, 87, 0.151),
       0px 10px 20px 1px rgba(82, 87, 87, 0.181);
-  }
+}
+
+hr {
+  margin: 1vh;
+}
+
+.contact-section {
+  font-size: 2.5vh;
+  position: relative;
+  top: -5vh;
+}
+
+#name, #email {
+  margin: 2vh 0 0 0;
+}
+
+#id, #subject, #message {
+    margin: 2vh 0;
+}
+#name:focus, #email:focus, #id:focus, #subject:focus, #message:focus {
+  box-shadow: 0 0 0 .15rem rgb(109,105,95);
+}
+
+#message {
+  min-height: 15vh;
+  max-height: 20vh;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+  color: rgb(109,105,95);
+  background-color: rgba(0, 0, 0, 0.048);
+  transition: 1s;
+}
+
+button:active {
+  background-color:rgba(245, 173, 66, 0.781);
+}

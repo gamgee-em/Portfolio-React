@@ -17,7 +17,7 @@
     align-self: center;
     align-items: center;
     flex: 1 0 0 calc(25% - 1em);
-    margin: 0 6vw 0 8vw; 
+    margin: 0 8vw; 
     width: 75vw;
     height: 75vh;
     border-radius:12px;
