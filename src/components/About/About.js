@@ -1,5 +1,6 @@
 import homeBtn from '../HomeBtn/HomeBtn';
 import './index.css';
+import aboutImg from './images/sam-nrg-thunderstruck.JPG';
 
 const About = () => {
 
@@ -8,7 +9,7 @@ const About = () => {
             {homeBtn}
             <section className="about-card-body">
                 <article className="about-card-img">
-                    <img src="/images/sam-nrg-thunderstruck.jpg" alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
+                    <img src={aboutImg} alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
                 </article>
                 <article className="about-card-body-content">
                     <p>
