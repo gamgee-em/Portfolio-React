@@ -32,6 +32,14 @@
   top: -1vh;
 }
 
+.title {
+  text-shadow: 3px 2px 2px rgb(0, 0, 0)
+}
+
+.section-title p {
+  text-shadow: 1px 2px 2px rgb(0, 0, 0)
+}
+
 hr {
   margin: 1vh;
 }
@@ -66,24 +74,4 @@ button:hover {
 button:active {
   color: rgb(0, 0, 0);
   background-color:rgba(245, 173, 66, 0.781);
-}
-
-.social-icons {
-  text-align: center;
-}
-
-.social-icons img {
-  position: relative;
-  top: 2.5vh;
-  margin: 0 .25vw;
-  height: 5vh;
-  /* box-shadow: 0 0 .2vw white; */
-  background-color: rgba(109, 105, 95, 0.568);
-  border-radius: 5px;
-}
-
-.social-icons img:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.048);
-  transition: 500ms;
 }

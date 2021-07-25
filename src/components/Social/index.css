@@ -1,0 +1,20 @@
+
+.social-icons {
+    text-align: center;
+}
+  
+.social-icons img {
+position: relative;
+top: 2.5vh;
+margin: 0 .25vw;
+height: 5vh;
+background-color: rgba(109, 105, 95, 0.568);
+border-radius: 5px;
+}
+
+.social-icons img:hover {
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.048);
+box-shadow: 0 0 .2vw rgba(109, 105, 95, 0.925);
+transition: 500ms;
+}

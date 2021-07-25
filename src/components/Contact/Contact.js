@@ -1,4 +1,5 @@
 import homeBtn from '../HomeBtn/HomeBtn';
+import social from '../Social/Social';
 import './index.css';
 
 const Contact = () => {
@@ -46,11 +47,7 @@ const Contact = () => {
                                         </div>
                                         <button type="submit" className="submit">Submit</button>
                                     </form>
-                                    <section className="social-icons">
-                                        <img src="https://img.icons8.com/material-two-tone/24/000000/github.png"/>
-                                        <img src="https://img.icons8.com/material-two-tone/24/000000/linkedin--v1.png"/>
-                                        <img src="https://img.icons8.com/material-two-tone/24/000000/stack-of-tweets.png" className=""/>
-                                    </section>
+                                    {social}
                                 </div>
                             </div>
                         </div>
