@@ -1,4 +1,5 @@
 import homeBtn from '../HomeBtn/HomeBtn';
+import './index.css';
 
 const About = () => {
 
