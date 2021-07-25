@@ -17,33 +17,25 @@ const Contact = () => {
                                         I would love your feedback! Please contact me with suggestions or work opportunities. Thank you!
                                     </p>
                                     <hr/>
-                                    <form id="contact-form" /* onSubmit={this.submitEmail.bind(this)}  */
-                                            method="POST">
+                                    <form id="contact-form" method="POST">
                                         <div className="form-group">
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <input placeholder = "Name"  id="name" type="text" 
-                                                    className="form-control" /* required value={this.state.name} 
-                                                    onChange={this.onNameChange.bind(this)} *//>
+                                                    className="form-control"/>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <input placeholder = "Your Email"  id="email" type="email"
                                                     className="form-control" aria-describedby="emailHelp"
-                                                    required /* value={this.state.email} onChange=
-                                                    {this.onEmailChange.bind(this)} *//>
+                                                    required/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="form-group">
-                                            <input placeholder = "Subject"  id="subject" type="text"
-                                            className="form-control" /* required value={this.state.subject}
-                                            onChange={this.onSubjectChange.bind(this)} *//>
+                                            <input placeholder = "Subject"  id="subject" type="text" className="form-control"/>
                                         </div>
                                         <div className="form-group">
-                                            <textarea placeholder = "Message"  id="message" 
-                                            className="form-control" rows="1" 
-                                            /*required value= {this.state.message}
-                                            onChange= {this.onMsgChange.bind(this)} *//>
+                                            <textarea placeholder = "Message"  id="message" className="form-control" rows="1" />
                                         </div>
                                         <button type="submit" className="submit">Submit</button>
                                     </form>
