@@ -40,10 +40,25 @@
     background-color: transparent;
 }
   
-  .cards .card img {
+.cards .card img {
     border-radius: 8px;
     box-shadow: 
       0px 4px 10px 1px rgb(0, 0, 0),
       0px 4px 10px 1px rgb(0, 0, 0),
       0px 6px 10px 1px rgb(0, 0, 0);
 }
+
+.cards h4 {
+  padding-left: .5vw;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
+}
+
+.card img:hover {
+  box-shadow: 
+        0px 2px 5px 1px rgba(255, 255, 255, 0.051),
+        0px 4px 12px 1px rgba(255, 255, 255, 0.151),
+        0px 6px 15px 1px rgba(87, 87, 87, 0.121),
+        0px 8px 18px 1px rgba(82, 87, 87, 0.151),
+        0px 10px 20px 1px rgba(82, 87, 87, 0.181);
+}
+
