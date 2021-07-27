@@ -32,7 +32,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## __GIF__
 ![Application Demo](./public/assets/gif/react-portfolio.gif)
 # __Screenshots__
-![home-ss](https://user-images.githubusercontent.com/56444674/127210804-fae33bd6-633b-4a50-a838-a7a7fed028fd.png)
+![home-ss](https://user-images.githubusercontent.com/56444674/127215843-dac61235-c008-4bc2-b4b3-8aa732c6dd0a.png)
 
 ![about-ss](https://user-images.githubusercontent.com/56444674/127210803-38dde3eb-fa78-41dc-acde-83152f9fbc3e.png)
 
