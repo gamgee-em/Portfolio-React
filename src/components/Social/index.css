@@ -1,11 +1,11 @@
-
 .social-icons {
+    position: relative;
+    top: -2vh;
     text-align: center;
 }
   
 .social-icons img {
 position: relative;
-top: 2.5vh;
 margin: 0 .25vw;
 height: 5vh;
 background-color: rgba(109, 105, 95, 0.568);
@@ -17,4 +17,16 @@ cursor: pointer;
 background-color: rgba(255, 255, 255, 0.048);
 box-shadow: 0 0 .2vw rgba(109, 105, 95, 0.925);
 transition: 500ms;
+}
+
+.contact-number, .contact-email a {
+    position: relative;
+    top: 1vh;
+    color: rgb(109,105,95);
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    color: rgba(245, 173, 66, 0.781);
+    font-weight: 600;
 }
