@@ -3,7 +3,7 @@
 }
 
 .background-image {
-    background: url(./images/sambishop.jpg);
+    background: url(./images/sambishop-compressed.jpg);
      /* background: url(https://www.w3schools.com/howto/img_parallax.jpg);
      */ background-repeat: no-repeat;
     background-size: cover;
