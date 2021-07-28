@@ -4,8 +4,7 @@
 
 .background-image {
     background: url(./images/sambishop-compressed.jpg);
-     /* background: url(https://www.w3schools.com/howto/img_parallax.jpg);
-     */ background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
