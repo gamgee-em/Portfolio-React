@@ -11,6 +11,7 @@ My personal portfolio built with React, JavaScript, NodeJS, JSX
 * [Badges](#badges)
 * [GIF](#gif)
 * [Screenshots](#screenshots)
+* [Lighthouse](#lighthouse)
 * [Contributors](#contributors)
 * [Contact Information](#questions)
 * [Live Application](#application)
@@ -41,6 +42,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ![resume-ss](https://user-images.githubusercontent.com/56444674/127210801-eaa9f417-e2bd-4844-a9ac-2a672b8e0cc0.png)
 
 ![contact-ss](https://user-images.githubusercontent.com/56444674/127210799-6abb0337-78db-4cd0-8dfd-8a7c81171a96.png)
+# __Lighthouse__
+![portfolio-lighthouse](https://user-images.githubusercontent.com/56444674/127530945-38d4c43f-a918-401a-98ff-befca3aea4f0.png)
 
 ## __Contributors__
 * Sam Sweigart
