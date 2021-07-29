@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css';
 import homeBtn from '../HomeBtn/HomeBtn';
 import bucketListImg from "./images/bucket-list-ss.png";
 import workoutImg from "./images/workout-sessions.png";
@@ -35,51 +35,12 @@ const Portfolio = () => {
                                 </a>
                             </div>
                         )})}
-                        
-
-                        {/* <div className="card">
-                            <h4>Workout Sessions</h4>
-                            <a className="card" href="https://github.com/gamgee-em/Workout-Sessions" target="_blank" rel="noreferrer">
-                                <img src={workoutImg} alt="Workout Sessions screenshot" className="portfolio-img" />
-                            </a>
-                        </div> */}
-                        
-                        {/* <div className="card">
-                            <h4>Spend App</h4>
-                            <a className="card" href="https://github.com/gamgee-em/spend-app" target="_blank" rel="noreferrer">
-                                <img src={spendAppImg} alt="Spend App screenshot" className="portfolio-img" />
-                            </a>
-                        </div>
-                        <div className="card">
-                            <h4>Bucket List</h4>
-                            <a className="card" href="https://github.com/gamgee-em/Bucket-List" target="_blank" rel="noreferrer">
-                                <img src={bucketListImg} alt="Bucket List screenshot" className="portfolio-img" />
-                            </a>
-                        </div>
-                        <div className="card">
-                            <h4>Team Builder</h4>
-                            <a className="card" href="https://github.com/gamgee-em/Team-Profile-Builder" target="_blank" rel="noreferrer">
-                                <img src={teamBuilderImg} alt="Team Profile Builder screenshot" className="portfolio-img" />
-                            </a>
-                        </div>
-                        <div className="card">
-                            <h4>All Things Tech</h4>
-                            <a className="card" href="https://github.com/gamgee-em/Tech-Blog" target="_blank" rel="noreferrer">
-                                <img src={techBlogImg} alt="All Things Tech screenshot" className="portfolio-img" />
-                            </a>
-                        </div>
-                        <div className="card">
-                            <h4>Flobi Events</h4>
-                            <a className="card" href="https://github.com/gamgee-em/Project-API" target="_blank" rel="noreferrer">
-                                <img src={projectApiImg} alt="Project API screenshot" className="portfolio-img" />
-                            </a>
-                        </div>            */}
                     </section>
                 </div>
             </div>
         </main>
         
      );
-}
+};
  
 export default Portfolio;

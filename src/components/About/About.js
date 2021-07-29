@@ -24,6 +24,6 @@ const About = () => {
             </section>
         </main>
      );
-}
+};
  
 export default About;

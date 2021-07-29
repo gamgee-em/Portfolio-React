@@ -1,6 +1,7 @@
+import './index.css';
 import homeBtn from '../HomeBtn/HomeBtn';
 import social from '../Social/Social';
-import './index.css';
+
 
 const Contact = () => {
     return ( 
@@ -48,6 +49,6 @@ const Contact = () => {
             </div>
         </div>
      );
-}
+};
  
 export default Contact;

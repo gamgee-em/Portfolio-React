@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css';
 import homeBtn from '../HomeBtn/HomeBtn';
 import resumeImg from './images/resume.png';
 
@@ -15,6 +15,6 @@ const Resume = () => {
             </article>
         </main>
      );
-}
+};
  
 export default Resume;

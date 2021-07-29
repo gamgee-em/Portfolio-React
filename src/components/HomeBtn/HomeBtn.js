@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import './index.css';
+import { Link } from 'react-router-dom';
+
 
 const homeBtn = 
     <div className="back tool-tip">
