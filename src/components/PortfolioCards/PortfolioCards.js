@@ -8,10 +8,10 @@ const PortfolioCards = ({ images }) => {
                     <a className="card" href={image.url} target='_blank' rel='noreferrer'>
                         <img src={image.path} alt={image.alt} className="portfolio-img" />
                     </a>
-                </div>)
-            })}
+                </div>
+            )})};
             </section>
      );
-}
+};
  
 export default PortfolioCards;
