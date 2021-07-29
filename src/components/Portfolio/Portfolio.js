@@ -7,6 +7,7 @@ import teamBuilderImg from "./images/team-profile-builder.png";
 import techBlogImg from "./images/tech-blog.png";
 import projectApiImg from "./images/project-api.png";
 import { useState } from 'react';
+import PortfolioCards from '../PortfolioCards/PortfolioCards';
 
 const Portfolio = () => {
 
@@ -20,12 +21,12 @@ const Portfolio = () => {
     ]);
 
     return ( 
-
         <main className='portfolio'>
             {homeBtn}
             <div className='portfolio-card-body'>
                 <div className="centered">
-                    <section className="cards">
+                    <PortfolioCards images={images}/>
+                    {/* <section className="cards">
                         {images.map((image) => {
                             return(
                             <div className="card"  key={image.id}>
@@ -35,7 +36,7 @@ const Portfolio = () => {
                                 </a>
                             </div>
                         )})}
-                    </section>
+                    </section> */}
                 </div>
             </div>
         </main>
