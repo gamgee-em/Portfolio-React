@@ -11,7 +11,7 @@ import PortfolioCards from '../PortfolioCards/PortfolioCards';
 
 const Portfolio = () => {
 
-    const [images, setImages] = useState([
+     const [images, setImages] = useState([
         { title: 'Workout Sessions', path: workoutImg, url: 'https://github.com/gamgee-em/Workout-Sessions', alt: "Workout Sessions screenshot", id: 1 },
         { title: 'Spend App', path: spendAppImg, url: 'https://github.com/gamgee-em/spend-app', id: 2 },
         { title: 'Bucket List', path: bucketListImg, url: 'https://github.com/gamgee-em/Bucket-List', id: 3 },

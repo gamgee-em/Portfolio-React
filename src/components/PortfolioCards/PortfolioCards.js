@@ -1,15 +1,24 @@
 const PortfolioCards = ({ images }) => {
         return(
             <section className="cards">
-             {images.map((image) => {
+              {images.map((image) => {
                 return (
-                <div className="card"  key={image.id}>
-                    <h4>{image.title}</h4>
-                    <a className="card" href={image.url} target='_blank' rel='noreferrer'>
-                        <img src={image.path} alt={image.alt} className="portfolio-img" />
-                    </a>
-                </div>
-            )})};
+                    <div class="flip-card" key={image.id}>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src={image.path} alt={image.alt} />
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>{image.title}</h1>
+                                <a href={image.path}>GitHub Repo</a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                 
+            )})} 
             </section>
      );
 };
