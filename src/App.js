@@ -12,10 +12,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-      <div className="App  background-image main-container">
+      <div className="App background-image main-container">
         <Navbar />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path={ ['/','/Portfolio-React'] }>
             <Home />
           </Route>
           <Route exact path='/about'>

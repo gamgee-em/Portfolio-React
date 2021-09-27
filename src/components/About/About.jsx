@@ -1,12 +1,12 @@
 import './index.css';
-import homeBtn from '../HomeBtn/HomeBtn';
+import HomeBtn from '../HomeBtn/HomeBtn';
 import aboutImg from './images/sam-nrg-thunderstruck.JPG';
 
 const About = () => {
 
     return ( 
         <main className='about'>
-            {homeBtn}
+            <HomeBtn />
             <section className="about-card-body">
                 <article className="about-card-img">
                     <img src={aboutImg} alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />

@@ -1,6 +1,8 @@
 import './index.css';
 
-const social = 
+const Social = () => {
+
+    return (
         <section className="social-icons">
             <p className="contact-number">267.666.8499</p>
            
@@ -16,6 +18,8 @@ const social =
             
             <p className="contact-email"><a href="mailto:samuel.sweigart@gmail.com">samuel.sweigart@gmail.com</a></p>          
             
-        </section>;
+        </section>
+    );
+};
 
-export default social;
+export default Social;

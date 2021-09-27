@@ -1,12 +1,12 @@
 import './index.css';
-import homeBtn from '../HomeBtn/HomeBtn';
-import social from '../Social/Social';
+import Social from '../Social/Social';
+import HomeBtn from '../HomeBtn/HomeBtn';
 
 
 const Contact = () => {
     return ( 
         <div className="contact">
-            {homeBtn}
+            <HomeBtn />
             <div className='contact-card-body'>
                 <section className="contact-section">
                     <div className="container">
@@ -40,7 +40,7 @@ const Contact = () => {
                                         </div>
                                         <button type="submit" className="submit">Submit</button>
                                     </form>
-                                    {social}
+                                    <Social />
                                 </div>
                             </div>
                         </div>
