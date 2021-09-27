@@ -1,5 +1,5 @@
 import './index.css';
-import moolahImg from "./images/signin-ss.png";
+import moolahImg from "./images/moolah-ss.png";
 import workoutImg from "./images/workout-sessions.png";
 import spendAppImg from "./images/spend-app-ss.png";
 import teamBuilderImg from "./images/team-profile-builder.png";
