@@ -9,3 +9,17 @@
     background-position: center;
     height: 100vh;
 }
+
+.introContainer {
+    position: absolute;
+    top: 13vh;
+    left: 8.75vw;
+}
+
+.introContainer h2 {
+    color: rgb(66, 65, 61);
+    font-weight: 800;
+    text-shadow: 1px 1px 1px rgb(45, 43, 43);
+    margin: 1vh 0 0 0;
+}
+
