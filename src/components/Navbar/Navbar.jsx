@@ -21,7 +21,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link to='/contact'>
-                    <motion.li whileHover = {{ scale: 1.2 }}> Portfolio </motion.li>
+                    <motion.li whileHover = {{ scale: 1.2 }}> Contact </motion.li>
                 </Link>
 
             </div>

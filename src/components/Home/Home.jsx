@@ -4,52 +4,33 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
 
-    const hi = 'Hi';
+    const hi = 'Hi,';
     const introName = 'I\'m Sam';
-
-    const sentence = {
-        hidden: { opacity: 1 },
-        visible: {
-            opacity: 1,
-            transition: {
-                delay: 0.5,
-                staggeredChildren: 0.08,
-            },
-        },
-    };
-
-    const chars = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0 },
-    }
     
     return (
         <div className='main-container'>
             <main className='background-image'>
-              {/*  <motion.div className="introContainer">
-                   <motion.h2 className="load-screen--message"
-                    variants = { sentence }
-                    initial = 'hidden'
-                    animate = 'visible'
-                   >
-                       { hi.split(' ').map((char, index) => {
-                           return (
-                                <span key={ char + '-' + index } variants={chars}>
-                                   {char}
-                                </span>
-                           )
-                       })}
-                       <br/ >
-                       { introName.split(' ').map((char, index) => {
-                           return (
-                                <motion.span key={ char + '-' + index } variants={chars}>
-                                   {char}
-                                </motion.span>
-                           )
-                       })}
-                   </motion.h2>
-                   
-               </motion.div> */}
+
+                {/* Try to fade in each character */}
+               <motion.section className='introContainer'>
+                    <motion.h1 className='hi'
+                        initial={{ x: -1000, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: .5, duration: 1.5 }}
+                    >
+                        { hi }
+                    </motion.h1>
+
+                    <motion.h1 className='introName'
+                        initial={{ x: 1000, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ delay: .5, duration: 1.75 }}
+                    >
+                        { introName }
+                    </motion.h1>
+
+               </motion.section>
+            
             </main>
         </div>
     );
