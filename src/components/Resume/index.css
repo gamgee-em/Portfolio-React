@@ -37,3 +37,29 @@
     display: flex;
     justify-content: center;
 }
+
+.skillsCard ul {
+    color: rgb(109,105,95);
+    position: absolute;
+    top: 28vh;
+    left: 12vw;
+}
+
+h5 {
+    font-weight: 800;
+}
+
+section .libraries {
+    position: absolute;
+    left: 50vh;
+}
+
+
+
+ul li {
+    font-size: 1.2vw;
+    font-weight: 800;
+    list-style: inside square;
+    padding: 0 0 0 2vw;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
+}
