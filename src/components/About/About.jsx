@@ -10,16 +10,21 @@ const About = () => {
             <section className="about-card-body">
                 <article className="about-card-img">
                     <h2 className='about-title'> About Me </h2>
-                    <img src={aboutImg} alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
+                    <img className='aboutImg' src={aboutImg} alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
                 </article>
                 <article className="about-card-body-content">
                     <p>
-                        Hi There! Welcome to my portfolio page. My name is Sam Sweigart. I currently identify as a Front-End Web Developer and am in the pursuit of my Full-Stack identity. 
-                        For most of my life, I have held a passion for high-level performance and the finer details in what it takes to get there.
-                        In my journey for a new path, I began exploring HTML and CSS. Living life as someone who has a near insatiable curiosity for information and problem solving, 
-                        I quickly knew that Web Development is something I wanted to explore and with time, become proficient in. 
-                        Thank you for stopping by my page and taking the time to get to know me a bit better. This space will continue to be a work in progress as I polish my current skills and expand my scope into other aspects of Web Development. 
-                        Please check in regularly and I would love to hear any feedback you may have to offer.
+                        <span className='hi-there'> Hi There! </span> 
+                        Welcome to my portfolio page. My name is Sam Sweigart. 
+                        I currently reside in Philadelphia, PA and identify as a Full Stack Web Developer.
+                        In my journey for a new path, I began exploring HTML and CSS. 
+                        Someone who has a near insatiable curiosity for information and problem solving, 
+                        I quickly knew that Web Development was something I wanted to pursue.
+                    </p>
+                        <p>
+                        Thank you for stopping by my page and taking the time to get to know me a bit better. 
+                        This space will continue to be a work in progress as I polish my current skills and expand my scope into other aspects of Web Development. 
+                        Please check back regularly, as I would love to hear any feedback you may have to offer.
                     </p>
                 </article>
             </section>

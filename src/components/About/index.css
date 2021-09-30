@@ -28,12 +28,13 @@
 
 .about-title {
     position: absolute;
-    top: 20.5vh;
+    top: 21.5vh;
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
-.about-card-img img {
-    width: 40vw;
+.about-card-img .aboutImg {
+    cursor: default;
+    width: 36vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 
@@ -48,4 +49,9 @@
     padding: 1vh 0 0 0;
     width: 35vw;
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+
+.hi-there {
+    font-size: 1.2rem;
+    font-weight: 800;
 }
