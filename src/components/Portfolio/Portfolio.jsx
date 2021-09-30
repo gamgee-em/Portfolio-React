@@ -19,7 +19,7 @@ const Portfolio = () => {
         { title: 'MooLah', path: moolahImg, url: 'https://moolah-tip-tracker.herokuapp.com/', alt: "MooLah Tip Tracker application screenshot", id: 3 },
         { title: 'Team Builder', path: teamBuilderImg, url: 'https://github.com/gamgee-em/Team-Profile-Builder', alt: "Team-Profile-Builder application screenshot", id: 4 },
         { title: 'All Things Tech', path: techBlogImg, url: 'https://github.com/gamgee-em/Tech-Blog', alt: "Tech Blog application screenshot", id: 5 },
-        { title: 'Flobi Events', path: projectApiImg, url: 'https://github.com/gamgee-em/Project-API', alt: "Flobi Events application screenshot", id: 6 },  
+        { title: 'Flobi Events', path: projectApiImg, url: 'https://gamgee-em.github.io/Project-API/', alt: "Flobi Events application screenshot", id: 6 },  
     ]);
 
    /*  useEffect(() => {
@@ -37,6 +37,7 @@ const Portfolio = () => {
             <HomeBtn />
             <div className='portfolio-card-body'>
                 <div className="centered">
+                    <h2 className='portfolio-title'> Portfolio </h2>
                     <PortfolioCards images={images}/>
                 </div>
             </div>

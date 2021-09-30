@@ -26,6 +26,13 @@
         0px 10px 20px 1px rgba(82, 87, 87, 0.181);
 }
 
+.portfolio-title {
+  position: relative;
+  top: -4vh;
+  margin: 0;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0)
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;

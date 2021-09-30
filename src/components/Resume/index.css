@@ -12,7 +12,6 @@
 
 .resume-card-body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-self: center;
     align-items: center;
@@ -38,28 +37,29 @@
     justify-content: center;
 }
 
-.skillsCard ul {
+.skillsCard {
+    display: flex;
+}
+
+.resume-title {
+    position: absolute;
+    top: 20.5vh;
+}
+
+h5, .resume-title, .languages, .tools {
     color: rgb(109,105,95);
-    position: absolute;
-    top: 28vh;
-    left: 12vw;
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
-h5 {
-    font-weight: 800;
+.skillsCard ul {
+    position: relative;
+    top: -6vh;
+    padding: 0 2vw;
 }
-
-section .libraries {
-    position: absolute;
-    left: 50vh;
-}
-
-
 
 ul li {
     font-size: 1.2vw;
-    font-weight: 800;
     list-style: inside square;
+    position: relative;
     padding: 0 0 0 2vw;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
 }

@@ -26,6 +26,12 @@
         0px 10px 20px 1px rgba(82, 87, 87, 0.181);
 }
 
+.about-title {
+    position: absolute;
+    top: 20.5vh;
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+
 .about-card-img img {
     width: 40vw;
     height: auto;
@@ -41,5 +47,5 @@
     margin: 2vh 0 0 0;
     padding: 1vh 0 0 0;
     width: 35vw;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }

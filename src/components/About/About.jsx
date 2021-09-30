@@ -9,6 +9,7 @@ const About = () => {
             <HomeBtn />
             <section className="about-card-body">
                 <article className="about-card-img">
+                    <h2 className='about-title'> About Me </h2>
                     <img src={aboutImg} alt="Sam Sweigart on the Route 'ThunderStruck' in the New River Gorge" />
                 </article>
                 <article className="about-card-body-content">
