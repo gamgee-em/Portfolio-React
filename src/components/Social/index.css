@@ -19,7 +19,13 @@ box-shadow: 0 0 .2vw rgba(109, 105, 95, 0.925);
 transition: 500ms;
 }
 
-.contact-number, .contact-email a {
+.social-icons p {
+    margin: 0;
+    padding: .5vh 0;
+    max-width: auto;
+}
+
+.contact-number, a {
     position: relative;
     top: 1vh;
     color: rgb(109,105,95);
@@ -28,5 +34,4 @@ transition: 500ms;
 
 .contact-email a:hover {
     color: rgba(245, 173, 66, 0.781);
-    font-weight: 600;
 }

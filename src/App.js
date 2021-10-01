@@ -18,7 +18,7 @@ const App = () => {
     
       <div className="App background-image main-container">
         <Navbar />
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
           <Switch location={ location } key={ location.key }>
             <Route exact path={ ['/','/Portfolio-React'] }>
               <Home />

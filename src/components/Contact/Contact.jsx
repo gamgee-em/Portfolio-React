@@ -1,12 +1,34 @@
 import './index.css';
 import Social from '../Social/Social';
 import HomeBtn from '../HomeBtn/HomeBtn';
-
+import { motion } from 'framer-motion';
 
 const Contact = () => {
+
+    const containerVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: { delay: .25, duration: 1 }
+        },
+        exit: {
+            x: '100vw',
+            transition: { ease: 'easeOut', duration: .5 }
+        },
+    };
+
     return ( 
-        <div className="contact">
+        <motion.div className="contact"
+            variants={ containerVariants }
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+            >
+
             <HomeBtn />
+
             <div className='contact-card-body'>
                 <section className="contact-section">
                     <div className="container">
@@ -47,7 +69,7 @@ const Contact = () => {
                     </div>
                 </section>
             </div>
-        </div>
+        </motion.div>
      );
 };
  

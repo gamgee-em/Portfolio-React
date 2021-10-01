@@ -1,11 +1,31 @@
 import './index.css';
 import HomeBtn from '../HomeBtn/HomeBtn';
 import aboutImg from './images/sam-nrg-thunderstruck.JPG';
+import { motion } from 'framer-motion';
 
 const About = () => {
 
+    const containerVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: { delay: .25, duration: 1 }
+        },
+        exit: {
+            x: '100vw',
+            transition: { ease: 'easeOut', duration: .5 }
+        },
+    }
+
     return ( 
-        <main className='about'>
+        <motion.main className='about'
+            variants={ containerVariants }
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
             <HomeBtn />
             <section className="about-card-body">
                 <article className="about-card-img">
@@ -28,7 +48,7 @@ const About = () => {
                     </p>
                 </article>
             </section>
-        </main>
+        </motion.main>
      );
 };
  

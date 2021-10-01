@@ -4,8 +4,28 @@ import resumeImg from './images/resume.png';
 import { motion } from 'framer-motion';
 
 const Resume = () => {
+
+    const containerVariants = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: { delay: .25, duration: 1 }
+        },
+        exit: {
+            x: '100vw',
+            transition: { ease: 'easeOut', duration: .5 }
+        },
+    };
+
     return ( 
-        <main className="resume">
+        <motion.main className="resume"
+            variants={ containerVariants }
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
             <HomeBtn />
 
             <article className="resume-card-body">
@@ -125,7 +145,7 @@ const Resume = () => {
                     </a>
                 </section>
             </article>
-        </main>
+        </motion.main>
      );
 };
  

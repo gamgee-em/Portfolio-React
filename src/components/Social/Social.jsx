@@ -1,4 +1,5 @@
 import './index.css';
+import { motion } from 'framer-motion';
 
 const Social = () => {
 
@@ -16,7 +17,11 @@ const Social = () => {
                 <img src="https://img.icons8.com/material-two-tone/24/000000/stack-of-tweets.png" alt="Twitter Icon"/>
             </a>
             
-            <p className="contact-email"><a href="mailto:samuel.sweigart@gmail.com">samuel.sweigart@gmail.com</a></p>          
+            <motion.p className="contact-email"
+                whileHover = {{ scale: 1.1 }}
+            >
+                <a href="mailto:samuel.sweigart@gmail.com">samuel.sweigart@gmail.com</a>
+            </motion.p>          
             
         </section>
     );

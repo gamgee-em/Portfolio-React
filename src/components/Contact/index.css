@@ -65,17 +65,17 @@ hr {
 }
 
 button {
-  border-radius: 3px;
-  border: none;
+  width: 10vw;
+  height: 5.5vh;
+  color: rgb(109,105,95);
+  border-radius: 15px;
+  border: 1px solid rgb(109,105,95);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
 button:hover {
-  color: rgb(109,105,95);
-  background-color: rgba(0, 0, 0, 0.048);
+  background-color:rgb(49, 47, 47);
   transition: 1000ms;
-}
-
-button:active {
-  color: rgb(0, 0, 0);
-  background-color:rgba(245, 173, 66, 0.781);
+  box-shadow: 0px 0px 2px 1px rgb(109,105,95);
 }
