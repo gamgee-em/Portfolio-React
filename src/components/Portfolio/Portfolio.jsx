@@ -3,12 +3,12 @@ import moolahImg from "./images/moolah-ss.png";
 import workoutImg from "./images/workout-sessions.png";
 import spendAppImg from "./images/spend-app-ss.png";
 import teamBuilderImg from "./images/team-profile-builder.png";
-import techBlogImg from "./images/tech-blog.png";
+import bucketListImg from "./images/bucket-list-ss.png";
 import projectApiImg from "./images/project-api.png";
-import { useState } from 'react';
 import PortfolioCards from '../PortfolioCards/PortfolioCards';
 import HomeBtn from '../HomeBtn/HomeBtn';
 //import { useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
@@ -19,7 +19,7 @@ const Portfolio = () => {
         { title: 'Spend App', path: spendAppImg, url: 'https://thawing-tundra-12672.herokuapp.com/', alt: "Workout Sessions screenshot", id: 2 },
         { title: 'MooLah', path: moolahImg, url: 'https://moolah-tip-tracker.herokuapp.com/', alt: "MooLah Tip Tracker application screenshot", id: 3 },
         { title: 'Team Builder', path: teamBuilderImg, url: 'https://github.com/gamgee-em/Team-Profile-Builder', alt: "Team-Profile-Builder application screenshot", id: 4 },
-        { title: 'All Things Tech', path: techBlogImg, url: 'https://github.com/gamgee-em/Tech-Blog', alt: "Tech Blog application screenshot", id: 5 },
+        { title: 'Bucket List', path: bucketListImg, url: 'https://gamgee-em.github.io/Bucket-List/', alt: "Bucket List application screenshot", id: 5 },
         { title: 'Flobi Events', path: projectApiImg, url: 'https://gamgee-em.github.io/Project-API/', alt: "Flobi Events application screenshot", id: 6 },  
     ]);
 

@@ -11,7 +11,12 @@ const PortfolioCards = ({ images }) => {
                             </div>
                             <div class="flip-card-back">
                                 <h1>{image.title}</h1>
-                                <a href={image.url} target='_blank' rel='noopener noreferrer'>View Application</a>
+                                <a href={image.url} 
+                                    target='_blank' 
+                                    rel='noopener noreferrer'
+                                >
+                                    View Application Details
+                                    </a>
                                 <p></p>
                             </div>
                         </div>

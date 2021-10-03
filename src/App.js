@@ -6,7 +6,9 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
+import Modal from './components/Modal/Modal';
 //! import and set alias 
+import { useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -14,10 +16,16 @@ const App = () => {
   
   const location = useLocation();
 
+  /* change state once finished w/ styling */
+  const [ showModal, setShowModal ] = useState(false);
+
   return (
     
       <div className="App background-image main-container">
         <Navbar />
+        
+        <Modal showModal={ showModal } setShowModal={ setShowModal }/>
+
         <AnimatePresence exitBeforeEnter>
           <Switch location={ location } key={ location.key }>
             <Route exact path={ ['/','/Portfolio-React'] }>
@@ -38,6 +46,7 @@ const App = () => {
           </Switch>
         </AnimatePresence>
         <Footer />
+
       </div>
   );
 }
