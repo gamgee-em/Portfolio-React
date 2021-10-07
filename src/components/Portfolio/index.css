@@ -7,6 +7,7 @@
   
 .portfolio-card-body {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-self: center;
@@ -53,7 +54,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 2s;
   transform-style: preserve-3d;
 }
 

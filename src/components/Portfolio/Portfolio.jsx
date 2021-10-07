@@ -7,14 +7,14 @@ import bucketListImg from "./images/bucket-list-ss.png";
 import projectApiImg from "./images/project-api.png";
 import PortfolioCards from '../PortfolioCards/PortfolioCards';
 import HomeBtn from '../HomeBtn/HomeBtn';
-//import { useEffect } from 'react';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import Modal from '../Modal/Modal';
 
-const Portfolio = () => {
+const Portfolio = ({ modalOpen, setModalOpen, open, close }) => {
 
     //const [images, setImages] = useState(null);
-    const [images, setImages] = useState([
+    const [images] = useState([
         { title: 'Workout Sessions', path: workoutImg, url: 'https://pacific-lowlands-32048.herokuapp.com/?id=6151e3ea6f6df100157c12f5', alt: "Workout Sessions screenshot", id: 1 },
         { title: 'Spend App', path: spendAppImg, url: 'https://thawing-tundra-12672.herokuapp.com/', alt: "Workout Sessions screenshot", id: 2 },
         { title: 'MooLah', path: moolahImg, url: 'https://moolah-tip-tracker.herokuapp.com/', alt: "MooLah Tip Tracker application screenshot", id: 3 },
@@ -35,33 +35,31 @@ const Portfolio = () => {
             x: '100vw',
             transition: { ease: 'easeOut', duration: .5 }
         },
-    }
-
-   /*  useEffect(() => {
-        fetch('https://api.github.com/users/gamgee-em/starred')
-            .then(res => {
-                return res.json();
-            }).then(data => {
-                console.log('Data', data);
-                setImages(data);
-            })
-    }, []); */
+    };
 
     return ( 
 
         <motion.main className='portfolio'
-            variants={ containerVariants }
+            variants={containerVariants}
             initial='hidden'
             animate='visible'
             exit='exit'
         >
             <HomeBtn />
-            <div className='portfolio-card-body'>
+            <div className='portfolio-card-body' >
                 <div className="centered">
                     <h2 className='portfolio-title'> Portfolio </h2>
-                    <PortfolioCards images={images}/>
+                    <PortfolioCards close={close} open={open} modalOpen={modalOpen} setModalOpen={setModalOpen} images={images} />
                 </div>
             </div>
+            <AnimatePresence
+                initial={false}
+                exitBeforeEnter={true}
+            >
+                { modalOpen && <Modal modalOpen={open} handleClose={close} images={images}/> }
+            </AnimatePresence>
+            
+
         </motion.main>
      );
 };

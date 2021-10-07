@@ -84,58 +84,72 @@ const Resume = () => {
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 1.25 }}
+                            transition={{ delay: .35, duration: 1.45 }}
                         >
                             NodeJS
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 1.45 }}
+                            transition={{ delay: .35, duration: 1.65 }}
                         >
                             ExpressJS
                             </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 1.65 }}
+                            transition={{ delay: .35, duration: 1.85 }}
+                        >
+                            JQuery
+                            </motion.li>
+                        <motion.li
+                            initial={{ y: 1000, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: .35, duration: 2.05 }}
                         >
                             SQL
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 1.85 }}
+                            transition={{ delay: .35, duration: 2.25 }}
                         >
                             NoSQL
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 2.05 }}
+                            transition={{ delay: .35, duration: 2.45 }}
                         >
                             MongoDB
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 2.25 }}
+                            transition={{ delay: .35, duration: 2.65 }}
                         >
                             Mongoose
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 2.5 }}
+                            transition={{ delay: .35, duration: 2.85 }}
                         >
                             MySQL
                         </motion.li>
                         <motion.li
                             initial={{ y: 1000, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: .35, duration: 2.7 }}
+                            transition={{ delay: .35, duration: 3.05 }}
                         >
                             NPM
+                        </motion.li>
+                        <motion.li
+                            initial={{ y: 1000, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: .35, duration: 3.25 }}
+                        >
+                            MERN
                         </motion.li>
                     </motion.ul>
                 </section>
