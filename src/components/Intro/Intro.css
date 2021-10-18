@@ -1,15 +1,3 @@
-.main-container {
-    height: 100vh;
-}
-
-.background-image {
-    background: url(./images/sambishop-compressed.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
 .introContainer {
     position: absolute;
     cursor: default;

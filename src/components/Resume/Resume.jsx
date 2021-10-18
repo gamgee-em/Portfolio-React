@@ -3,7 +3,7 @@ import HomeBtn from '../HomeBtn/HomeBtn';
 import resumeImg from './images/resume.png';
 import { motion } from 'framer-motion';
 
-const Resume = () => {
+const Resume = ({ images }) => {
 
     const containerVariants = {
         hidden: {
@@ -32,7 +32,7 @@ const Resume = () => {
 
                 <section className='skillsCard'>
                     
-                    <h2 className='resume-title'> Resume </h2>
+                    <h2 className='resumeTitle'> Resume </h2>
 
                     <motion.ul className='languages'>
                         <motion.h5 

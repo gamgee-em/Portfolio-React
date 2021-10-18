@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
-const PortfolioCards = ({ images, openModal, close, open }) => {
+const PortfolioCards = ({ images, openModal, close, open, handleProjectDisplay }) => {
 
+    
         return(
             <motion.section className="cards">
               {images.map((image) => {
@@ -18,21 +19,18 @@ const PortfolioCards = ({ images, openModal, close, open }) => {
                             <div class="flip-card-back">
                                 <h1>{image.title}</h1>
                                 <motion.button
+                                    key={image.id}
                                     className='appLink'
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
-                                    onClick={ () => openModal ? close() : open() }
+                                    onClick={ () => {
+                                        console.log('Image.id:', image.id)
+                                        open(image.id)
+                                     } 
+                                    }
                                 >
                                     Details
                                 </motion.button>
-                                
-                                {/* <a href='#'{image.url}
-                                    target='_blank' 
-                                    rel='noopener noreferrer'
-                                    onClick={(()=> setShowModal(true))}
-                                >
-                                    View Application Details
-                                </a> */}
 
                             </div>                          
                         </div>

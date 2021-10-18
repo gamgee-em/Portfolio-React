@@ -2,8 +2,7 @@ import './index.css';
 import { motion } from 'framer-motion';
 import Backdrop from '../Backdrop/Backdrop';
 
-const Modal = ({ handleClose, text, images }) => {
-
+const Modal = ({ handleClose, images }) => {
     
     const modalVariants = {
         hidden: { 
@@ -25,30 +24,23 @@ const Modal = ({ handleClose, text, images }) => {
             opacity: 0,
         },
     };
+    let id = [];
 
     return (
 
-        /* <AnimatePresence exitBeforeEnter>
-            
-                (
-                <motion.section className="port-modal"
-                    variants={ modalVariants }
-                    initial='hidden'
-                    animate='visible'
-                    exit='exit'
-                    onClick={onClick}
-                >
-                    <h2 className='appDesc'> Workout Tracker </h2>
-                    <h2 className='appTech'> Technologies Used </h2>
-                </motion.section>
-                )
-            
-        </AnimatePresence> */
-
         <Backdrop onClick={handleClose}>
+            {id && images.map(image => {
+                // Trying to get only 1 object to display
+                //? if key.id === image.id?
+                id = (image.id)
+                
+                console.log('ID:', id)
+                console.log('Image:', image.id)
+                 return ( 
             <motion.section
                 onClick={(e) => e.stopPropagation()}
                 className='portModal'
+                key={image.id}
                 variants={ modalVariants }
                 initial='hidden'
                 animate='visible'
@@ -59,16 +51,22 @@ const Modal = ({ handleClose, text, images }) => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: .25, duration: 1.25 }}
                 > 
-                    <span className='modalTitle'> Application Title </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    <span className='modalTitle'> {image.title} </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
                     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
 
 
                 </motion.p>
                 <motion.button
-                    className='deployBtn'
+                    className='deployBtn' 
                 >
-                    Deploy
+                    <a href={image.url}
+                        target='_blank' 
+                        rel='noopener noreferrer'
+                        key={image.id}
+                    >
+                        Deploy
+                    </a>
                 </motion.button>
 
                 <motion.h5>Tech Used</motion.h5>
@@ -104,6 +102,7 @@ const Modal = ({ handleClose, text, images }) => {
                     </motion.ul>
                 </motion.aside>
             </motion.section>
+            )})}
         </Backdrop>
         
      );

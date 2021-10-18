@@ -55,3 +55,9 @@
     bottom: 6vh;
     left: 11vw;
 }
+
+.deployBtn a {
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+    top: 0;
+}

@@ -1,7 +1,7 @@
 import './index.css';
 import { motion } from 'framer-motion';
 
-const Backdrop = ({ children, onClick}) => {
+const Backdrop = ({ children, onClick }) => {
 
      const backdropVariants = {
         hidden: { 

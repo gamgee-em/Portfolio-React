@@ -39,11 +39,13 @@
 
 .skillsCard {
     display: flex;
+    justify-content: center;
 }
 
-.resume-title {
+.resumeTitle {
     position: absolute;
     top: 20.5vh;
+    
 }
 
 h5, .resume-title, .languages, .tools {
@@ -51,15 +53,23 @@ h5, .resume-title, .languages, .tools {
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
+.tools {
+    left: 4vw;
+}
+
+.languages {
+    right: 4vw;
+}
+
 .skillsCard ul {
     position: relative;
-    top: -6vh;
-    padding: 0 2vw;
+    top: -2vh;
+    padding: 0;
 }
 
 ul li {
     font-size: 1.2vw;
-    list-style: inside square;
+    list-style: none;
     position: relative;
-    padding: 0 0 0 2vw;
+    padding: 0 1vw;
 }
