@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 
 const PortfolioCards = ({ images, openModal, close, open, handleProjectDisplay }) => {
 
-    
         return(
             <motion.section className="cards">
               {images.map((image) => {
@@ -17,14 +16,15 @@ const PortfolioCards = ({ images, openModal, close, open, handleProjectDisplay }
                             </div>
 
                             <div class="flip-card-back">
+                                
                                 <h1>{image.title}</h1>
+                                
                                 <motion.button
                                     key={image.id}
                                     className='appLink'
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                     onClick={ () => {
-                                        console.log('Image.id:', image.id)
                                         open(image.id)
                                      } 
                                     }
