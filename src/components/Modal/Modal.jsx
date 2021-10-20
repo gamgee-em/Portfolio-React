@@ -4,6 +4,9 @@ import Backdrop from '../Backdrop/Backdrop';
 
 const Modal = ({ handleClose, images }) => {
     
+    let id = [];
+    let tech;
+
     const modalVariants = {
         hidden: { 
             y:'-100vh',
@@ -24,15 +27,15 @@ const Modal = ({ handleClose, images }) => {
             opacity: 0,
         },
     };
-    let id = [];
 
     return (
 
         <Backdrop onClick={handleClose}>
             
-            {id && images.map(image => {
+            {id && images.map((image)=> {
                 id = (image.id)
-    
+                tech = image.tech;
+                
                 return ( 
                     <motion.section
                         onClick={(e) => e.stopPropagation()}
@@ -72,40 +75,22 @@ const Modal = ({ handleClose, images }) => {
                                 Repo
                             </a>
                         </motion.button>
-
+                        
                         <motion.h5>Tech Used</motion.h5>
 
                         <motion.aside className='modalTech'>
-
-                            {images.map((image, i) => {
-                                console.log(image);
-                                return (
-                                   <motion.ul
-                                    className='techList1'
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: .25, duration: 1.25 }}
-                                    key={image.id}
-                                    > 
-                                        <li key={image.id}>{image.tech[i]}</li>
-                                        
-                                    </motion.ul>
-                                )}
-                            )}
-
                             <motion.ul
-                                className='techList2'
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: .25, duration: 1.25 }}
+                            className='techList1'
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: .25, duration: 1.25 }}
+                            key={image.id}
                             > 
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                {tech.map((i) => (
+                                    <li key={image.id}>{i}</li>
+                                ))}
                             </motion.ul>
+
                         </motion.aside>
                     </motion.section>
                 )}
@@ -113,5 +98,5 @@ const Modal = ({ handleClose, images }) => {
         </Backdrop>
     );
 };
- 
+
 export default Modal;
