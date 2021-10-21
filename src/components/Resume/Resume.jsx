@@ -1,6 +1,6 @@
 import './index.css';
 import HomeBtn from '../HomeBtn/HomeBtn';
-import resumeImg from './images/resume.png';
+import resumeImg from './images/resume2.png';
 import { motion } from 'framer-motion';
 
 const Resume = ({ images }) => {
