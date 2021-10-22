@@ -80,14 +80,14 @@ const Modal = ({ handleClose, images }) => {
 
                         <motion.aside className='modalTech'>
                             <motion.ul
-                            className='techList1'
+                            className='techList'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: .25, duration: 1.25 }}
                             key={image.id}
                             > 
-                                {tech.map((i) => (
-                                    <li key={image.id}>{i}</li>
+                                {tech.map((techItem) => (
+                                    <li key={image.id}>{techItem}</li>
                                 ))}
                             </motion.ul>
 
