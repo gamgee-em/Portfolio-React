@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-React/static/css/main.7fa7835c.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.fa22a0a8.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.fa22a0a8.chunk.js.map",
+    "main.js": "/Portfolio-React/static/js/main.c1599ec7.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.c1599ec7.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.1dd6446e.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.1dd6446e.js.map",
     "static/css/2.4be38407.chunk.css": "/Portfolio-React/static/css/2.4be38407.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/bucket-list-ss.aa626f7b.png": "/Portfolio-React/static/media/bucket-list-ss.aa626f7b.png",
     "static/media/moolah-ss.99fca3d6.png": "/Portfolio-React/static/media/moolah-ss.99fca3d6.png",
     "static/media/project-api.9e78b1c0.png": "/Portfolio-React/static/media/project-api.9e78b1c0.png",
-    "static/media/resume2.f06a4f06.png": "/Portfolio-React/static/media/resume2.f06a4f06.png",
+    "static/media/resume.bd05f933.png": "/Portfolio-React/static/media/resume.bd05f933.png",
     "static/media/sam-nrg-thunderstruck.56a7c99d.JPG": "/Portfolio-React/static/media/sam-nrg-thunderstruck.56a7c99d.JPG",
     "static/media/index.css": "/Portfolio-React/static/media/sambishop-compressed.885f8afc.jpg",
     "static/media/spend-app-ss.466a50a9.png": "/Portfolio-React/static/media/spend-app-ss.466a50a9.png",
@@ -29,6 +29,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.d05cd46e.chunk.js",
     "static/css/main.7fa7835c.chunk.css",
-    "static/js/main.fa22a0a8.chunk.js"
+    "static/js/main.c1599ec7.chunk.js"
   ]
 }
