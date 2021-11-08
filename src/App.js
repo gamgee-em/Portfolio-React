@@ -56,7 +56,7 @@ const App = () => {
             exitBeforeEnter={true}
           >
           <Switch location={ location } key={ location.key }>
-            <Route exact path={ ['/','/Portfolio-React'] }>
+            <Route exact path={ ['/','/portfolio-react'] }>
               <Intro />
             </Route>
             <Route exact path='/about'>
