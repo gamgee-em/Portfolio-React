@@ -1,6 +1,6 @@
 import './index.css';
 import HomeBtn from '../HomeBtn/HomeBtn';
-import resumeImg from './images/resume2.png';
+import resumeImg from './images/resume.png';
 import { motion } from 'framer-motion';
 
 const Resume = ({ images }) => {
@@ -154,7 +154,7 @@ const Resume = ({ images }) => {
                     </motion.ul>
                 </section>
                 <section className="resume-card">
-                    <a href='https://drive.google.com/file/d/1eDNQRJeGJSx0bIPIuo5tRqKTkDko7B4H/view?usp=sharing' target='_blank' rel="noreferrer">
+                    <a href='https://docs.google.com/document/d/1PyBqtCsuwPYuPC8IJ53pEs-H4ZhxnJ_3/edit?usp=sharing&ouid=101696114141993190374&rtpof=true&sd=true' target='_blank' rel="noreferrer">
                         <img src={resumeImg} alt="Downloadable PDF of Resume" className="resume-img" />
                     </a>
                 </section>
