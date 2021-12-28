@@ -1,75 +1,116 @@
-.resume-img {
-    width: 25vw;
-    border-radius: 8px;
-}
-
-.resume-card {
-    box-shadow: 
-        0px 4px 10px 1px rgba(0, 0, 0, 0.123),
-        0px 4px 10px 1px rgb(0, 0, 0, 0.123),
-        0px 6px 10px 1px rgb(0, 0, 0, 0.123);
+.resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
 }
 
 .resume-card-body {
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
+    display: grid;
     align-items: center;
-    flex: 1 0 0 calc(25% - 1em);
-    margin: 0 8vw; 
-    width: 75vw;
-    height: 75vh;
-    border-radius:12px;
-    color: rgb(109,105,95);
-    background-color: rgba(0, 0, 0, 0.562);
+    align-self: center;
+    margin: 0 2vw;
+    padding: 20px;
+    grid-gap: 20px;
     box-shadow: 
-      0px 2px 5px 1px rgba(255, 255, 255, 0.051),
-      0px 4px 12px 1px rgba(255, 255, 255, 0.151),
-      0px 6px 15px 1px rgba(87, 87, 87, 0.121),
-      0px 8px 18px 1px rgba(82, 87, 87, 0.151),
-      0px 10px 20px 1px rgba(82, 87, 87, 0.181);
+    0px 2px 5px 1px rgba(255, 255, 255, 0.051),
+    0px 4px 12px 1px rgba(255, 255, 255, 0.151),
+    0px 6px 15px 1px rgba(87, 87, 87, 0.121),
+    0px 8px 18px 1px rgba(82, 87, 87, 0.151),
+    0px 10px 20px 1px rgba(82, 87, 87, 0.181);
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 12px;
 }
 
-.resume {
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.774);  
-    display: flex;
-    justify-content: center;
-}
-
-.skillsCard {
-    display: flex;
-    justify-content: center;
+.resume-card {
+    justify-self: center;
+    grid-gap: 20px;
 }
 
 .resumeTitle {
-    position: absolute;
-    top: 20.5vh;
-    
+    grid-column: 1 / span 3;
 }
 
-h5, .resume-title, .languages, .tools {
+.resume-img {
+    width: 30vw;
+    border-radius: 8px;
+}
+
+.skillsCard {
+    display: grid;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+h5, .resumeTitle, .languages, .tools {
     color: rgb(109,105,95);
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
+    list-style: none;
 }
-
-.tools {
-    left: 4vw;
-}
-
-.languages {
-    right: 4vw;
-}
-
-.skillsCard ul {
-    position: relative;
-    top: -2vh;
+ul {
     padding: 0;
 }
 
-ul li {
-    font-size: 1.2vw;
-    list-style: none;
-    position: relative;
-    padding: 0 1vw;
+@media screen and (max-width: 1200px) {
+
+    .resume {
+        height: auto;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .resume-card-body {
+        grid-template: 1fr / repeat(1, 1fr); 
+        grid-gap: 10px;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .skillsCard {
+        grid-template: 1fr / repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .resumeTitle, a, .resume-img {
+        grid-column: 1 / span 3;
+        justify-self: center;
+    }
+
+    .resumeTitle {
+        padding: 2vh 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .languages, .tools {
+        grid-row: 3 / 4;
+    }
+    .resume-img {
+        grid-row: 2 / 3;
+        /* margin-bottom: 5vh; */
+    }
+
+    .resume-img {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .resume {
+        height: auto;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .skillsCard {
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .resumeTitle {
+        padding: 1vh 0;
+        margin: 0;
+    }
+
 }

@@ -28,6 +28,7 @@ const Intro = () => {
 
             </motion.section>
         </AnimatePresence>
+        
      );
 }
  

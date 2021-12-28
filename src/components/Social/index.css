@@ -25,9 +25,8 @@ transition: 500ms;
     max-width: auto;
 }
 
-.contact-number, a {
+.contact-number, .contact-email a  {
     position: relative;
-    top: 1vh;
     color: rgb(109,105,95);
     text-decoration: none;
 }

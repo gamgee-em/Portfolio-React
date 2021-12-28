@@ -1,71 +1,59 @@
 .portModal {
-    display: flex; 
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: flex-start;
-   
-    width: clamp(50%, 50vw, 90%);
-    height: min(50%, 45vh);
-
-    margin: auto;
-    padding: 0 2rem;
+    display: grid;
+    align-self: center;
+    gap: 20px;
+    width: auto;
+    height: auto;
     border-radius:12px;
     color: rgb(0, 0, 0);
     background-color: rgb(109,105,95);
+    margin-top: -10vh;
+    padding: 6vh;
 }
 
 .portModal p, .portModal h5 {
     color: rgb(0, 0, 0);
-    position: relative;
-    top: 4.5vh;
     text-shadow: none;
 }
 
 .portModal p {
-    width: 25vw;
+    grid-column: 1 / 3;
 }
 
 .modalTitle {
     font-weight: 800;
-    width: 10vw;
-}
-
-.portModal aside {
-    display: flex;
-}
-
-.portModal h5 {
-    position: absolute;
-    top: 4.5vh;
-    right: 12.5vh;
 }
 
 .portModal p, .techList li {
-    font-size: 2.5vh;
+    font-size: 1rem;
 }
 
 .techList li {
-    top: 9vh;
-    padding: 0;
     list-style: none;
 }
 
-.deployBtn {
+.deployBtn, .repoBtn {
     border: 1px solid rgb(0, 0, 0);
-    position: absolute;
-    bottom: 6vh;
-    left: 7vw;
+    grid-column: 1 / 2;
+}
+
+.deployBtn {
+    grid-column: 1 / 2;
+    justify-self: right;
 }
 
 .repoBtn {
-    border: 1px solid rgb(0, 0, 0);
-    position: absolute;
-    bottom: 6vh;
-    left: 19vw;
+    grid-column: 2 / 3;
 }
 
 .deployBtn a, .repoBtn a {
-    color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    text-decoration: none;
     text-shadow: none;
-    top: 0;
+}
+
+@media screen and(max-width: 600px) {
+    .deployBtn {
+        grid-column: 1 / 3;
+    }
 }

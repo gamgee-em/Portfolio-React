@@ -1,23 +1,22 @@
 .about {
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.774);  
-    display: flex;
+    display: grid;
     justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);  
 }
 
 .about-card-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 1em;
+    padding: 4vh;
     align-self: center;
     align-items: center;
-    flex: 1 0 0 calc(25% - 1em);
-    margin: 0 8vw; 
     width: 75vw;
-    height: 75vh;
     border-radius:12px;
     color: rgb(109,105,95);
     background-color: rgba(0, 0, 0, 0.562);
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
     box-shadow: 
         0px 2px 5px 1px rgba(255, 255, 255, 0.051),
         0px 4px 12px 1px rgba(255, 255, 255, 0.151),
@@ -27,31 +26,65 @@
 }
 
 .about-title {
-    position: absolute;
-    top: 21.5vh;
-    text-shadow: 3px 2px 2px rgb(0, 0, 0);
+    margin: 0;
+    grid-column: 1 / 4;
 }
 
-.about-card-img .aboutImg {
-    cursor: default;
-    width: 36vw;
-    height: auto;
+.about-card-body img {
+    width: 38vw;
+    height: 30vh;
     border-radius: 10px;
-    box-shadow: 
-        0px 4px 10px 1px rgb(0, 0, 0),
-        0px 4px 10px 1px rgb(0, 0, 0),
-        0px 6px 10px 1px rgb(0, 0, 0);
 }
 
 .about-card-body-content {
-    font-size: 1.2vw;
-    margin: 2vh 0 0 0;
-    padding: 1vh 0 0 0;
-    width: 35vw;
+    font-size: 1rem;
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
 .hi-there {
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-title {
+       grid-column: 1 / 1;
+    }
+
+    .about-card-body {
+        grid-template: 100px / auto;
+        justify-items: center;
+        align-content:start;
+        width: 100vw;
+        height: 90vh;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .about-card-body img {
+        height: auto;
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about {
+        height: auto;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .about-title {
+        justify-self: center;
+        margin: 0;
+        grid-column: 1 / 1;
+    }
+
+    .about-card-body {
+        grid-template: 50px / auto;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
 }

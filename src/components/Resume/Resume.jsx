@@ -33,6 +33,10 @@ const Resume = ({ images }) => {
                 <section className='skillsCard'>
                     
                     <h2 className='resumeTitle'> Resume </h2>
+                    
+                    <a href='https://docs.google.com/document/d/1PyBqtCsuwPYuPC8IJ53pEs-H4ZhxnJ_3/edit?usp=sharing&ouid=101696114141993190374&rtpof=true&sd=true' target='_blank' rel="noreferrer" className='resume-link'>
+                        <img src={resumeImg} alt="Downloadable PDF of Resume" className="resume-img" />
+                    </a>
 
                     <motion.ul className='languages'>
                         <motion.h5 
@@ -152,11 +156,7 @@ const Resume = ({ images }) => {
                             MERN
                         </motion.li>
                     </motion.ul>
-                </section>
-                <section className="resume-card">
-                    <a href='https://docs.google.com/document/d/1PyBqtCsuwPYuPC8IJ53pEs-H4ZhxnJ_3/edit?usp=sharing&ouid=101696114141993190374&rtpof=true&sd=true' target='_blank' rel="noreferrer">
-                        <img src={resumeImg} alt="Downloadable PDF of Resume" className="resume-img" />
-                    </a>
+                    
                 </section>
             </article>
         </motion.main>

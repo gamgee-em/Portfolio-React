@@ -1,20 +1,13 @@
 .contact {
+  display: grid;
+  justify-content: center;
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.774);  
-    display: flex;
-    justify-content: center;
   }
   
 .contact-card-body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
     align-self: center;
-    align-items: center;
-    flex: 1 0 0 calc(25% - 1em);
-    margin: 0 8vw; 
-    width: 75vw;
-    height: 75vh;
     border-radius: 12px;
     color: rgb(109,105,95);
     background-color: rgba(0, 0, 0, 0.562);
@@ -28,8 +21,7 @@
 
 .contact-section {
   font-size: 2.5vh;
-  position: relative;
-  top: 1vh;
+  margin: 1vh 0 0 0;
 }
 
 .title {
@@ -68,7 +60,7 @@ button {
   width: 10vw;
   height: 5.5vh;
   color: rgb(109,105,95);
-  border-radius: 15px;
+  border-radius: 20px;
   border: 1px solid rgb(109,105,95);
   background-color: rgba(0, 0, 0, 0);
   text-shadow: 3px 2px 2px rgb(0, 0, 0);
@@ -78,4 +70,55 @@ button:hover {
   background-color:rgb(49, 47, 47);
   transition: 1000ms;
   box-shadow: 0px 0px 2px 1px rgb(109,105,95);
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .contact-card-body {
+    height: 100%;
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .section-title {
+    padding: 0;
+  }
+
+  .title {
+    text-align: center;
+    padding: 2vh 0;
+  }
+
+  button {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .contact-section {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .contact-card-body {
+    padding: 20px;
+  }
+
+  .title, .section-title p {
+    text-align: center;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  button {
+    width: 25vw;
+    height: 5vh;
+    border-radius: 25px;
+  }
+
 }

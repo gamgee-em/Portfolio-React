@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+p {
+  margin: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -40,6 +44,9 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
 }
 
+@media screen and (max-width: 600px) {
+  
+}

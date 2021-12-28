@@ -57,41 +57,41 @@ const Modal = ({ handleClose, images }) => {
                             
                         </motion.p>
                         
-                        <motion.button className='deployBtn'>
-                            <a href={image.url}
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                                key={image.id}
-                            >
-                                Deploy
-                            </a>
-                        </motion.button>
-                        <motion.button className='repoBtn'>
-                            <a href={image.repo}
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                                key={image.id}
-                            >
-                                Repo
-                            </a>
-                        </motion.button>
-                        
-                        <motion.h5>Tech Used</motion.h5>
-
-                        <motion.aside className='modalTech'>
-                            <motion.ul
+                        {/* <motion.aside className='modalTech'> */}
+                            {/* <motion.ul
                             className='techList'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: .25, duration: 1.25 }}
                             key={image.id}
-                            > 
+                            > */}
+
+                                {/* <motion.h5>Tech Used</motion.h5>
+                                
                                 {tech.map((techItem) => (
                                     <li key={image.id}>{techItem}</li>
-                                ))}
-                            </motion.ul>
+                                ))} */}
 
-                        </motion.aside>
+                           {/*  </motion.ul> */}
+                            <motion.button className='deployBtn'>
+                            <a href={image.url}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                key={image.id}
+                            >
+                                Deploy
+                            </a>
+                            </motion.button>
+                            <motion.button className='repoBtn'>
+                                <a href={image.repo}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    key={image.id}
+                                >
+                                    Repo
+                                </a>
+                            </motion.button>
+                        {/* </motion.aside> */}
                     </motion.section>
                 )}
             )}

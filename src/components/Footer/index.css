@@ -1,11 +1,29 @@
 footer {
-    font-size: 2.5vh;  
-    color: black;
-    font-weight: bold;
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    bottom: -1vh;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.151);
+  font-size: 2.5vh;
+  color: black;
+  font-weight: bold;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: -1vh;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.151);
+}
+
+.footer p {
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer p {
+    font-size: 1rem;
+    margin-bottom: 1vh;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .footer p {
+    font-size: 1rem;
+    margin-bottom: 1vh;
+  }
+}

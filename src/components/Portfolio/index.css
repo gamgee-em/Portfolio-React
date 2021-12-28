@@ -1,53 +1,46 @@
- .portfolio {
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.774);
-    display: flex;
-    justify-content: center;
- }
-  
-.portfolio-card-body {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-self: center;
-    align-items: center;
-    flex: 1 0 0 calc(25% - 1em);
-    margin: 0 8vw; 
-    width: 75vw;
-    height: 75vh;
-    border-radius:12px;
-    color: rgb(109,105,95);
-    background-color: rgba(0, 0, 0, 0.562);
-    box-shadow: 
-        0px 2px 5px 1px rgba(255, 255, 255, 0.051),
-        0px 4px 12px 1px rgba(255, 255, 255, 0.151),
-        0px 6px 15px 1px rgba(87, 87, 87, 0.121),
-        0px 8px 18px 1px rgba(82, 87, 87, 0.151),
-        0px 10px 20px 1px rgba(82, 87, 87, 0.181);
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.774);
 }
 
-.portfolio-title {
-  position: relative;
-  top: -4vh;
-  margin: 0;
-  text-shadow: 3px 2px 2px rgb(0, 0, 0)
+.portfolio-card-body {
+  display: grid;
+  align-items: center;
+  align-self: center;
+  margin: 0 2vw;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.562);
+  color: rgb(109, 105, 95);
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px 1px rgba(255, 255, 255, 0.051),
+  0px 4px 12px 1px rgba(255, 255, 255, 0.151),
+  0px 6px 15px 1px rgba(87, 87, 87, 0.121),
+  0px 8px 18px 1px rgba(82, 87, 87, 0.151),
+  0px 10px 20px 1px rgba(82, 87, 87, 0.181);
+}
+
+.centered {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax( 25vh, auto));
+  gap: 1em;
+}
+
+.portfolio-title {
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
 }
 
 .flip-card {
-  margin: .5vw;
   background-color: transparent;
-  width: 24vw;
-  height: 25vh;
   perspective: 1000px;
-}
+} 
 
 .flip-card-inner {
   position: relative;
@@ -56,25 +49,27 @@
   text-align: center;
   transition: transform 2s;
   transform-style: preserve-3d;
-}
+} 
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
+  
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
+} 
 
 .flip-card-front img {
   height: 100%;
-  width: 100%;
+  width: 100%; 
   border-radius: 5px;
-}
+} 
 
 img:hover {
   cursor: pointer;
@@ -89,10 +84,70 @@ img:hover {
 .flip-card-back a {
   text-decoration: none;
   color: rgba(245, 173, 66, 0.781);
-}
+} 
 
 .flip-card-back a:hover {
   text-decoration: none;
   transition: 0.8s;
   color: rgb(195, 190, 190);
+}
+
+@media screen and (max-width: 1200px) {
+  
+  body {
+    overflow: scroll;
+  }
+
+  .portfolio-card-body {
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax( 25vh, auto));
+  }
+
+  .portfolio-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .app-link {
+    width: 12.5vw;
+    height: 3vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .portfolio {
+    background-color: rgba(0, 0, 0);
+    height: 100%;
+  }
+
+  .portfolio-title {
+    padding: 1vh 0;
+  }
+
+  .portfolio-card-body {
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    border-radius: 0;
+    z-index: 0;
+  }
+  
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, minmax( 25vh, auto));
+    padding: 2vh 0;
+  }
+
+  .app-link {
+    width: 25vw;
+    height: 5vh;
+  }
 }
