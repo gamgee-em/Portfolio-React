@@ -47,6 +47,7 @@ h5, .resumeTitle, .languages, .tools {
     text-shadow: 3px 2px 2px rgb(0, 0, 0);
     list-style: none;
 }
+
 ul {
     padding: 0;
 }
@@ -112,5 +113,4 @@ ul {
         padding: 1vh 0;
         margin: 0;
     }
-
 }

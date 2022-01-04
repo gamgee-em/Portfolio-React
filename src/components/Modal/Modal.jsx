@@ -5,7 +5,6 @@ import Backdrop from '../Backdrop/Backdrop';
 const Modal = ({ handleClose, images }) => {
     
     let id = [];
-    let tech;
 
     const modalVariants = {
         hidden: { 
@@ -34,8 +33,7 @@ const Modal = ({ handleClose, images }) => {
             
             {id && images.map((image)=> {
                 id = (image.id)
-                tech = image.tech;
-                
+        
                 return ( 
                     <motion.section
                         onClick={(e) => e.stopPropagation()}
@@ -56,23 +54,6 @@ const Modal = ({ handleClose, images }) => {
                             {image.description}
                             
                         </motion.p>
-                        
-                        {/* <motion.aside className='modalTech'> */}
-                            {/* <motion.ul
-                            className='techList'
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: .25, duration: 1.25 }}
-                            key={image.id}
-                            > */}
-
-                                {/* <motion.h5>Tech Used</motion.h5>
-                                
-                                {tech.map((techItem) => (
-                                    <li key={image.id}>{techItem}</li>
-                                ))} */}
-
-                           {/*  </motion.ul> */}
                             <motion.button className='deployBtn'>
                             <a href={image.url}
                                 target='_blank'
@@ -91,7 +72,6 @@ const Modal = ({ handleClose, images }) => {
                                     Repo
                                 </a>
                             </motion.button>
-                        {/* </motion.aside> */}
                     </motion.section>
                 )}
             )}
